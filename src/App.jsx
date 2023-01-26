@@ -15,6 +15,7 @@ function App () {
       setFact(currectFact)
       const firstWord = currectFact.split(' ')[0]
       const res2 = await fetch(`https://cataas.com/cat/says/${firstWord}`)
+      console.log(res2)
       setImgUrl(await res2.url)
     }
 
